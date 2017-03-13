@@ -13,11 +13,6 @@
 <div class="jumbotron text-center">
   <p>Prototype</p> 
 </div>
-<!--Next projects-->
-<!--Ideenfabrik-->
-<!--How to solve problems-->
-<!--Is it useful or not?-->
-<!--Simulation of Pro & Contra-->
 
 <!--Frage Section-->
 <div class="container">
