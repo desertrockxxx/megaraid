@@ -14,7 +14,6 @@ if(isset($frage)){
         } else {
             $db->query("INSERT INTO frage (titel, inhalt, checked) VALUES ('$frage', '$antwort', '$checked', $fileToUpload)");
         }
-        
     }
 }
 
