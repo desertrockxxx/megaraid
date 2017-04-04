@@ -7,6 +7,9 @@ require_once("header.php");
   <p>Lorem ipsum dolor sit amet, consectetur adipisicing</p> 
 </div>
   
+  
+  
+  
 <div class="container">
   <div class="row">
     <div class="col-sm-4">
