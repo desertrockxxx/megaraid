@@ -32,6 +32,7 @@ require_once("header.php");
         <button data-toggle="collapse" data-target="#demo1">Neue Frage hinzufügen</button>
         <div id="demo1" class="collapse">
             <?php require_once("add.php"); ?>
+            
         </div>
         
         <button data-toggle="collapse" data-target="#demo2">Bestehende Frage beantworten</button>
