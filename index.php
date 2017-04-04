@@ -40,7 +40,7 @@ require_once("header.php");
         
         <button data-toggle="collapse" data-target="#demo2">Bestehende Frage beantworten</button>
         <div id="demo2" class="collapse">
-            Lorem ipsum dolor text.... 2
+            <?php require_once("read.php"); ?>
         </div>
         
         <button data-toggle="collapse" data-target="#demo3">Kommentar zu Antwort hinzufügen</button>
@@ -51,8 +51,15 @@ require_once("header.php");
 </div>
 
 
-<?php echo "Deine Frage lautet: " . $_GET['frage'] . "<br>Als Antwort gibts du: " . $_GET['antwort'] . "<br>Deine Gesinnung ist: " . $_GET['checked'] ; ?>
+<?php 
+echo "Deine Frage lautet: " . $_GET['frage'] . 
+"<br>Als Antwort gibts du: " . $_GET['antwort'] . 
+"<br>Deine Gesinnung ist: " . $_GET['checked'] . 
+"<br>File Upload: " . $_GET['fileToUpload'];
+?>
+
+
 
 <?php 
-require_once("footer.php"); ?>
+require_once("footer.php");
 ?>
