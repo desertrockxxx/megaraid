@@ -11,28 +11,22 @@ require_once("functions.php");
                 <th>Frage</th>
                 <th>Antwort</th>
                 <th>Pro?</th>
+                <th>FileToUpload</th>
             </tr>
         </thead>
         <tbody>
+            <?php foreach($fragen as $key => $frage) { ?>
             <tr>
-                <td>John</td>
-                <td>Doe</td>
-                <td>john@example.com</td>
+                <td><?php echo $titel[$key]; ?></td>
+                <td><?php echo $inhalt[$key]; ?></td>
+                <td><?php echo $checked[$key]; ?></td>
+                <td><?php echo $fileToUpload[$key]; ?></td>
             </tr>
-            <tr>
-                <td>Mary</td>
-                <td>Moe</td>
-                <td>mary@example.com</td>
-            </tr>
-            <tr>
-                <td>July</td>
-                <td>Dooley</td>
-                <td>july@example.com</td>
-            </tr>
+            <?php } ?>
         </tbody>
     </table>
 </div>
 
 <pre>
-<?php return read(); ?>
+<?php  ?>
 </pre>

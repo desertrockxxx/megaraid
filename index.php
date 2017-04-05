@@ -13,17 +13,17 @@ require_once("header.php");
 <div class="container">
   <div class="row">
     <div class="col-sm-4">
-      <h3>Frage</h3>
+      <h3>Fragen</h3>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
       <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
     </div>
     <div class="col-sm-4">
-      <h3>Antwort</h3>
+      <h3>Antworten</h3>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
       <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
     </div>
     <div class="col-sm-4">
-      <h3>Kommentar</h3>        
+      <h3>Kommentieren</h3>        
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
       <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
     </div>
@@ -41,6 +41,11 @@ require_once("header.php");
         <button data-toggle="collapse" data-target="#demo2">Bestehende Frage beantworten</button>
         <div id="demo2" class="collapse">
             <?php require_once("read.php"); ?>
+        </div>
+        
+        <button data-toggle="collapse" data-target="#demo3">Antwort zu Frage hinzufügen</button>
+        <div id="demo3" class="collapse">
+            <?php require_once("update.php"); ?>
         </div>
         
         <button data-toggle="collapse" data-target="#demo3">Kommentar zu Antwort hinzufügen</button>
