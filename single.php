@@ -8,12 +8,14 @@ require_once("inc/functions.php");
     <table class="table table-striped">
         <thead>
             <tr>
+                <th>ID</th>
                 <th>Titel</th>
                 <th>Antwort</th>
             </tr>
         </thead>
         <tbody>
             <tr>
+                <td><?php echo $id[0];?></td>
                 <td><?php echo $titel[0] ;?></td>
                 <td><?php echo $inhalt[0] ;?></td>
             </tr>

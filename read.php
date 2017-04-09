@@ -8,17 +8,20 @@ require_once("inc/functions.php");
     <table class="table table-striped">
         <thead>
             <tr>
+                <th>ID</th>
                 <th>Frage</th>
                 <th>Antwort</th>
                 <th>Pro?</th>
                 <th>FileToUpload</th>
                 <th>Datum</th>
+                
             </tr>
         </thead>
         <tbody>
             <?php foreach($fragen as $key => $frage) { ?>
             <tr>
-                <td><a href="index.php?readpost=<?php echo (++$key)?>"><?php echo $titel[$key]; ?></a></td>
+                <td><?php echo $id[$key] ;?></td>
+                <td><?php echo $titel[$key]; ?></a></td>
                 <td><?php echo $inhalt[$key]; ?></td>
                 <td><?php echo $checked[$key]; ?></td>
                 <td><?php echo $fileToUpload[$key]; ?></td>

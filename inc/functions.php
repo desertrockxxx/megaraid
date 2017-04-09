@@ -18,10 +18,11 @@ if(isset($frage) && isset($antwort)){
 
 
 // Read Anzeigen von Datensätzen
-$stmt = $db->query("SELECT titel, inhalt, checked, fileToUpload, datum FROM frage");
+$stmt = $db->query("SELECT id, titel, inhalt, checked, fileToUpload, datum FROM frage");
 $fragen = $stmt->fetchAll();
 
 foreach ($fragen as $key => $frage) {
+    $id[$key] = $frage['id'];
     $titel[$key]  = $frage['titel'] ;
     $inhalt[$key]  = $frage['inhalt'];
     $checked[$key]  = $frage['checked'];
