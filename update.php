@@ -3,30 +3,18 @@ require_once("functions.php");
 ?>
 
 <div class="container">
-    <h2>Bestehende Datensätze</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing</p>            
-    <table class="table table-striped">
-        <thead>
-            <tr>
-                <th>Frage</th>
-                <th>Antwort</th>
-                <th>Pro?</th>
-                <th>FileToUpload</th>
-            </tr>
-        </thead>
-        <tbody>
-            <?php foreach($fragen as $key => $frage) { ?>
-            <tr>
-                <td><?php echo $titel[$key]; ?></td>
-                <td><?php echo $inhalt[$key]; ?></td>
-                <td><?php echo $checked[$key]; ?></td>
-                <td><?php echo $fileToUpload[$key]; ?></td>
-            </tr>
-            <?php } ?>
-        </tbody>
-    </table>
+    <h2>Datensätze verändern</h2>
+    <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST" enctype="multipart/form-data">
+        <div class="form-group">
+          <label for="frage">Frage</label>
+          <input type="text" class="form-control" name="frage" placeholder="Frage">
+        </div>
+        <div class="form-group">
+          <label for="antwort">Antwort</label>
+          <input type="text" class="form-control" name="antwort" placeholder="Antwort">
+        </div>
+        <div class="form-group">
+          <input type="file" name="fileToUpload" id="fileToUpload">
+          <button type="submit" class="btn btn-default">Submit</button>
+        </div>
 </div>
-
-<pre>
-<?php  ?>
-</pre>

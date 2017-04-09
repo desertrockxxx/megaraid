@@ -1,10 +1,10 @@
 <?php
-require_once("functions.php");
+require_once("inc/functions.php");
 ?>
 
 <div class="container">
-    <h2>Formular</h2>
-    <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST" enctype="multipart/form-data">
+    <h2>Hinzufügen einer neuen Frage</h2>
+    <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="GET" enctype="multipart/form-data">
         <!--Gesinnung eingeben-->
         <div class="form-group">
           <div class="checkbox">
@@ -19,10 +19,7 @@ require_once("functions.php");
           <label for="antwort">Antwort</label>
           <input type="text" class="form-control" name="antwort" placeholder="Antwort">
         </div>
-        <div class="form-group">
-          <input type="file" name="fileToUpload" id="fileToUpload">
-          <button type="submit" class="btn btn-default">Submit</button>
-        </div>
+        <?php require_once("upload.php"); ?>
     </form>
 </div>
 

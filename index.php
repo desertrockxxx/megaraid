@@ -6,10 +6,7 @@ require_once("header.php");
   <h1>Megaraid</h1>
   <p>Lorem ipsum dolor sit amet, consectetur adipisicing</p> 
 </div>
-  
-  
-  
-  
+
 <div class="container">
   <div class="row">
     <div class="col-sm-4">
@@ -38,30 +35,18 @@ require_once("header.php");
             
         </div>
         
-        <button data-toggle="collapse" data-target="#demo2">Bestehende Frage beantworten</button>
+        <button data-toggle="collapse" data-target="#demo2">Alle Fragen anzeigen</button>
         <div id="demo2" class="collapse">
             <?php require_once("read.php"); ?>
+            
         </div>
         
-        <button data-toggle="collapse" data-target="#demo3">Antwort zu Frage hinzufügen</button>
+        <button data-toggle="collapse" data-target="#demo3">Einzelfrage anzeigen</button>
         <div id="demo3" class="collapse">
-            <?php require_once("update.php"); ?>
-        </div>
-        
-        <button data-toggle="collapse" data-target="#demo3">Kommentar zu Antwort hinzufügen</button>
-        <div id="demo3" class="collapse">
-            Lorem ipsum dolor text.... 3
+            <?php require_once("single.php"); ?>
         </div>
     </div>
 </div>
-
-
-<?php 
-echo "Deine Frage lautet: " . $_GET['frage'] . 
-"<br>Als Antwort gibts du: " . $_GET['antwort'] . 
-"<br>Deine Gesinnung ist: " . $_GET['checked'] . 
-"<br>File Upload: " . $_GET['fileToUpload'];
-?>
 
 
 

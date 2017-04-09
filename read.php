@@ -1,5 +1,5 @@
 <?php
-require_once("functions.php");
+require_once("inc/functions.php");
 ?>
 
 <div class="container">
@@ -12,21 +12,19 @@ require_once("functions.php");
                 <th>Antwort</th>
                 <th>Pro?</th>
                 <th>FileToUpload</th>
+                <th>Datum</th>
             </tr>
         </thead>
         <tbody>
             <?php foreach($fragen as $key => $frage) { ?>
             <tr>
-                <td><?php echo $titel[$key]; ?></td>
+                <td><a href="index.php?readpost=<?php echo (++$key)?>"><?php echo $titel[$key]; ?></a></td>
                 <td><?php echo $inhalt[$key]; ?></td>
                 <td><?php echo $checked[$key]; ?></td>
                 <td><?php echo $fileToUpload[$key]; ?></td>
+                <td><?php echo $datum[$key]?></td>
             </tr>
             <?php } ?>
         </tbody>
     </table>
 </div>
-
-<pre>
-<?php  ?>
-</pre>
