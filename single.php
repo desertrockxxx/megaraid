@@ -25,6 +25,11 @@ require_once("inc/functions.php");
 
 <div class="container">
     <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="GET" enctype="multipart/form-data">
+        <select name="id_auswahl" class="selectpicker">
+            <?php foreach($fragen as $key => $frage) { ?>
+            <option><?php echo $frage['id']; ?></option>
+            <?php } ?>
+        </select>
         <div class="form-group">
           <label for="antwort">Antwort</label>
           <input type="text" class="form-control" name="antwort" placeholder="Antwort">
@@ -35,3 +40,4 @@ require_once("inc/functions.php");
         </div>
     </form>
 </div>
+
