@@ -11,10 +11,9 @@ require_once("inc/functions.php");
                 <th>ID</th>
                 <th>Frage</th>
                 <th>Antwort</th>
-                <th>Pro?</th>
+                <th>Auswahl</th>
                 <th>FileToUpload</th>
                 <th>Datum</th>
-                
             </tr>
         </thead>
         <tbody>
@@ -23,7 +22,7 @@ require_once("inc/functions.php");
                 <td><?php echo $id[$key] ;?></td>
                 <td><?php echo $titel[$key]; ?></a></td>
                 <td><?php echo $inhalt[$key]; ?></td>
-                <td><?php echo $checked[$key]; ?></td>
+                <td><?php echo $auswahl[$key]; ?></td>
                 <td><?php echo $fileToUpload[$key]; ?></td>
                 <td><?php echo $datum[$key]?></td>
             </tr>

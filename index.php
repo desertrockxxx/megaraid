@@ -50,6 +50,11 @@ require_once("header.php");
 
 
 
+
 <?php 
 require_once("footer.php");
 ?>
+
+<pre>
+  <?php var_dump($_GET);?>
+</pre>
